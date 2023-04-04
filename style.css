@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 94%);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 100px;
+    padding: 40px 100px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    border-radius: 15px 15px 120px 15px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+@media(max-width: 375px)
+{
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 10px 7px;
+    }
+    .input-val {
+        width:50px;
+    }
+}
+
+.top {
+    display: flex;
+    padding-bottom: 30px;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+
+.empty-msg {
+    margin-top: 5px;
+    width:120px;
+    color: hsl(0, 100%, 67%);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 10px;
+}
+
+.input-val {
+    width: 90px;
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-weight: 700;
+    color: hsl(0, 0%, 8%);
+    font-size: 20px;
+    border: 1px solid hsl(0, 0%, 94%);
+    outline: none;
+}
+
+.input-val:focus {
+    color: hsl(0, 0%, 8%);
+    border-color:hsl(0, 1%, 44%);
+    cursor: pointer;
+}
+
+.title {
+    font-weight: 700;
+    color: hsl(0, 1%, 44%);
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-bottom: 3px;
+}
+
+.day {
+    width: 100px;
+    margin-right: 25px;
+    
+}
+
+.month {
+    width: 100px;
+    margin-right: 25px;
+}
+
+.year {
+    width: 100px;
+    margin-right: 25px;
+}
+
+.img-box {
+    background-color: hsl(259, 100%, 65%);
+    margin: -30px 0 0 380px; 
+    padding: 20px;
+    height: 25px;
+    width:25px;
+    border-radius: 40px;
+    transition: background-color 0.1s;
+}
+
+.img-box:active {
+    background-color: hsl(0, 0%, 8%);
+}
+
+.bottom {
+    font-size: 60px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.bottom-val {
+    color: hsl(259, 100%, 65%);
+    margin-right: 10px;
+    letter-spacing: 10px;
+}
+
+.year-bottom {
+    display: flex;
+}
+
+.month-bottom {
+    display: flex;
+}
+
+.day-bottom {
+    display: flex;
+}
